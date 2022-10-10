@@ -98,8 +98,13 @@ body{
     color: white;
 }
 
-ul{
+.important-links{
     list-style-image: url(../images/next.png);
+    list-style-position: inside;
+}
+
+ul{
+    list-style-image: url(../images/feature.png);
     list-style-position: inside;
 }
 
@@ -172,4 +177,9 @@ footer p{
 .developer p, .footer-credit p{
     margin: 10px 0;
     padding: 0;
+}
+
+
+.features{
+ 
 }
