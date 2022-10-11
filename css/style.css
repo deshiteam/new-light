@@ -1,3 +1,7 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 body{
     background-image: repeating-linear-gradient(45deg, rgb(255,255,255) 0px, rgb(255,255,255) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(135deg, rgb(255,255,255) 0px, rgb(255,255,255) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(256,7%,84%),hsl(256,7%,84%));
 
@@ -9,6 +13,96 @@ body{
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+
+
+
+.top-bar {
+    padding: 8px 0;
+    background-image: linear-gradient(90deg, rgb(26, 16, 35),rgb(12, 216, 57));
+    position: relative;
+    color: white;
+  }
+  
+  /* Top info */
+  ul.top-info {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  ul.top-info li {
+    position: relative;
+    line-height: 10px;
+    display: inline-block;
+    margin-left: 0;
+    padding-right: 15px;
+  }
+  
+  ul.top-info li i {
+    font-size: 18px;
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+    
+  }
+  
+  ul.top-info li p.info-text {
+    margin: 0;
+    line-height: normal;
+    display: inline-block;
+    flex-direction: column;
+  }
+  
+  /* Top social */
+  .top-social ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: -12px;
+  }
+  @media (max-width: 767px) {
+    .top-social ul {
+      margin-right: 0;
+    }
+  }
+  .top-social ul li {
+    display: inline-block;
+    padding: 0;
+  }
+  .top-social ul li a {
+    color: #ffffff;
+    font-size: 14px;
+    transition: 400ms;
+    padding: 9px 12px;
+  }
+  .top-social ul li a:hover {
+    color: rgb(17, 17, 17);
+  }
+  
+  /* Top bar border */
+  .top-bar-border {
+    padding: 8px 20px 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .top-bar-border ul.top-info {
+    color: #707070;
+    font-weight: 400;
+  }
+  
+  .top-bar-border .top-social li a {
+    color: #7c7c7c;
+  }
+  
+  .top-bar-border ul.top-info li i {
+    color: #ffb600;
+  }
+  
+
+
+
+
 
 
 /* Topbar CSS start here */
@@ -29,21 +123,22 @@ body{
     background-image: linear-gradient(0deg, rgb(94, 5, 4),rgb(253, 19, 61));
     color: white;
     height: 30px;
-    padding: 0 10px;
+   
+    
 
 }
 
 .update{
     background-image: linear-gradient(-10deg, rgb(26, 16, 35),rgb(12, 216, 57));
     height: 30px;
-    border-right: 3px solid white;
+
 }
 
 .trigger-link{
     text-decoration: none;
     color: white;
-    border-right: 3px solid white;
     padding:  0 10px;
+    list-style: circle !important;
 }
 
 .trigger-link:hover{
@@ -64,13 +159,57 @@ body{
 
 .brand-logo{
     position: absolute;
-    top: 200px;
-    left: 200px;
+    top: 30%;
+    left: 20%;
 }
 
 .brand-logo img{
     width: 400px;
 }
+
+
+@media only screen and (max-width: 754px) {
+    .brand-logo{
+        position: absolute;
+        top: 10% !important;
+        left: 10% !important;
+    }
+    
+    .brand-logo img {
+      width: 200px !important;
+    }
+  }
+
+@media only screen and (max-width: 992px) {
+
+    .brand-logo{
+        position: absolute;
+        top: 10%;
+        left: 10%;
+    }
+    
+    .brand-logo img {
+      width: 250px;
+    }
+
+
+}
+
+@media only screen and (max-width: 1400px) {
+
+    .brand-logo{
+        position: absolute;
+        top: 20%;
+        left: 20%;
+    }
+    
+    .brand-logo img {
+      width: 250px;
+    }
+
+
+}
+
 
 .slide-image{
     border: 1px solid #d1cece;
@@ -82,20 +221,26 @@ body{
     width: 100%;
 }
 
+
 .sidebar{
     border: 1px solid #d1cece;
     margin-top: 20px;
 }
 
-.charman{
+.chairman{
     padding: 10px;
     text-align: center;
+}
+.chairman p{
+    margin-bottom: 0;
 }
 
 .company-position{
     width: 100%;
     background-image: linear-gradient(90deg, rgb(26, 16, 35),rgb(12, 216, 57));
     color: white;
+    font-size: 20px;
+    padding: 5px;
 }
 
 .important-links{
@@ -106,10 +251,6 @@ body{
 ul{
     list-style-image: url(../images/feature.png);
     list-style-position: inside;
-}
-
-.hotline-image{
-
 }
 
 .all-notice{
@@ -124,6 +265,7 @@ ul{
 
 .notice ol{
     list-style-position: inside;
+    
 }
 
 .notice ol li{
